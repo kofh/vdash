@@ -1,0 +1,13 @@
+{
+  "name": "vdash",
+  "version": "0.0.1",
+  "description": "lodash for vue composables",
+  "main": "index.js",
+  "repository": "https://github.com/kofh/vdash",
+  "author": "Tim Morris <timthewebguy@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "@vue/composition-api": "^0.3.4"
+  }
+}
