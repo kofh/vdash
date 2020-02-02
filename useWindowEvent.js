@@ -1,5 +1,11 @@
 import useEvent from './useEvent'
 
-export default function(event, handler, options = false, immediate = false) {
-  useEvent(window, event, handler, options, immediate)
+export default function({ event, handler, options, immediate }) {
+  useEvent({
+    target: () => window,
+    event,
+    handler,
+    options,
+    immediate
+  })
 }

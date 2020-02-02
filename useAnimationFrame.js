@@ -1,21 +1,18 @@
 import { onMounted, onBeforeUnmount } from '@vue/composition-api'
 
-export default function(fn, immediate = false) {
-  let raf = null
+export default function(fn) {
+  let frame = null
 
-  const update = () => {
+  const loop = () => {
     fn()
-    raf = window.requestAnimationFrame(update)
+    frame = window.requestAnimationFrame(loop)
   }
 
   onMounted(() => {
-    raf = window.requestAnimationFrame(update)
-    if (immediate) {
-      fn()
-    }
+    frame = window.requestAnimationFrame(loop)
   })
 
   onBeforeUnmount(() => {
-    window.cancelAnimationFrame(update)
+    window.cancelAnimationFrame(frame)
   })
 }

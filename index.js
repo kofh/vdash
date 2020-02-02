@@ -1,3 +1,5 @@
 export { default as useAnimationFrame } from './useAnimationFrame'
 export { default as useEvent } from './useEvent'
+export { default as useMousePosition } from './useMousePosition'
+export { default as useWindowDimensions } from './useWindowDimensions'
 export { default as useWindowEvent } from './useWindowEvent'
