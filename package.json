@@ -1,6 +1,6 @@
 {
   "name": "vdash",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "lodash for vue composables",
   "main": "index.js",
   "repository": "https://github.com/kofh/vdash",
@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "peerDependencies": {
-    "@vue/composition-api": "^0.3.4",
+    "@vue/composition-api": "^0.6.2",
     "gsap": "^3.0.0"
   }
 }
